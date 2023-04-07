@@ -16,7 +16,7 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8005/api/sendEmail", formData);
+      await axios.post("https://client-mail-1-b1l3.vercel.app/api/sendEmail", formData);
       notification.success({ message: "mail sended successfully" }); //npm init antd
     } catch (err) {
       console.log(err);
